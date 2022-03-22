@@ -22,35 +22,33 @@ import { writable } from 'svelte/store';
 // ************************************************
 
 // lab variables
-export const studyLocation = ''; // location of lab running mturk study
-export const labName = ''; // name of lab running HIT experiment 
-export const email = ''; // lab email for mturk
-export const studyAim = ''; // aim of mturk study 
-export const studyTasks = ''; // brief summary of HIT task for consent form
-export const experiment = ''; // name of experiment (should match collection name in firebase)
+export const studyLocation = 'moore'; // location of lab running mturk study
+export const labName = 'cosan'; // name of lab running HIT experiment 
+export const email = 'wasita.gr@dartmouth.edu'; // lab email for mturk
+export const studyAim = 'aim of study'; // aim of mturk study 
+export const studyTasks = 'brief HIT summary'; // brief summary of HIT task for consent form
+export const experiment = 'svelte-exp-test'; // name of experiment (should match collection name in firebase)
 
 // HIT variables
-export const HITPay = ''; // pay for HIT completion (format as X.XX with no dollar sign)
-export const userGroup = ''; // name of collection of participants for current HIT
-export const estHITTime = ''; // estimated time to complete HIT (in minutes)
+export const HITPay = '3.00'; // pay for HIT completion (format as X.XX with no dollar sign)
+export const userGroup = 'collection'; // name of collection of participants for current HIT
+export const estHITTime = '30'; // estimated time to complete HIT (in minutes)
 export const totalHITTime = estHITTime * 2; // total time provided for HIT (in minutes)
 
 // stimuli variables      
-export const ratingTypes = ['', '', '']; // array of rating types   
+export const ratingTypes = ['good', 'bad', 'blah']; // array of rating types   
 
 // this configures path to proper firebase
 // COPY AND PASTE YOUR FIREBASE CONFIG HERE
 let firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: "",
-    measurementId: ""
+  apiKey: "AIzaSyBVjNBhdBK8CwtMpWEIjlJxQF5DDX2dmhU",
+  authDomain: "continuous-rater-demo.firebaseapp.com",
+  databaseURL: "https://continuous-rater-demo-default-rtdb.firebaseio.com",
+  projectId: "continuous-rater-demo",
+  storageBucket: "continuous-rater-demo.appspot.com",
+  messagingSenderId: "861777413042",
+  appId: "1:861777413042:web:d7511693072fecb40e1aab"
 };
-
 // ************************************************
 // ************************************************
 // ************************************************
